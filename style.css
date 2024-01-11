@@ -1,4 +1,91 @@
 * {
   margin: 0;
   padding: 0;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  background-color: rgb(33, 33, 33);
+  color: rgb(229,229,229);
+  border-radius: 10px;
+  padding: 1vh 1vw;
+}
+
+/* header */
+header {
+  height: 10vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1.5vw;
+  padding: 0 15vw;
+}
+
+.header__nav-list {
+  display: flex;
+  gap: 3vw;
+}
+
+.nav-item {
+  color: rgb(117,117,117);
+}
+
+/* main */
+main {
+
+}
+
+.author-meeting {
+  height: 90vh;
+  padding: 0 15vw;
+  display: flex;
+  align-items: center;
+}
+
+.meeting__image {
+  width: 23%;
+  box-shadow: 6vh 6vh 1px 10px rgb(229,229,229);
+}
+
+.meeting__image > img {
+  width: 100%;
+}
+
+.meeting__content {
+  width: 77%;
+  display: flex;
+  flex-direction: column;
+  gap: 12vh;
+}
+
+.meeting__content > p {
+  margin-top: -10vh;
+  width: 70%;
+}
+
+.meeting__content > p, .details__item {
+  color: rgb(117,117,117);
+}
+
+.content__details {
+
+}
+
+.details__item {
+  display: flex;
+  align-items: center;
+  gap: 0.5vw;
+}
+
+.content__icon-group {
+
 }
