@@ -213,3 +213,34 @@ nav {
   color: rgb(117,117,117);
   border-radius: 10px;
 }
+
+/* CONTACT Page */
+.contact-info {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10vh;
+}
+
+.info__item {
+  display: flex;
+  align-items: center;
+}
+
+.info__item:nth-of-type(2) {
+  margin-top: -5vh;
+}
+
+.info__platforms {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2vh;
+}
+
+.work-heading.contact-heading {
+  width: 60%;
+  margin: 0 auto;
+}
