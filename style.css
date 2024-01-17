@@ -52,6 +52,10 @@ header {
   color: rgb(117,117,117);
 }
 
+header .mob-list-btn {
+  display: none;
+}
+
 /* main */
 main {
 
@@ -104,6 +108,62 @@ main {
 .content__icon-group {
 
 }
+
+@media screen and (max-width: 900px) {
+  header {
+    justify-content: center;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  .author-meeting {
+    flex-direction: column-reverse;
+  }
+
+  .meeting__content {
+    margin: 5vh 0;
+    gap: 9vh;
+  }
+
+  .meeting__image {
+    box-shadow: 0vh 2vh 0px 8px rgb(229,229, 229);
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  header {
+    justify-content: flex-end;
+    margin-right: 10vw;
+    padding: 0;
+  }
+  
+  header .mob-list-btn{
+    display: flex;
+    background-color: rgb(229,229, 229);
+    border: none;
+  }
+
+  .header__nav-list, .header__theme, .header__cv-btn {
+    display: none;
+  } 
+
+  .author-meeting {
+    padding: 0 5vw;
+  }
+
+  .meeting__content, .meeting__content > p {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .meeting__image {
+    width: 35%;
+  }
+} 
 
 /* ABOUT ME web page */
 nav {
@@ -222,6 +282,7 @@ nav {
   align-items: center;
   justify-content: center;
   gap: 10vh;
+  margin-top: -5vh;
 }
 
 .info__item {
