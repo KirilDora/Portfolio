@@ -208,6 +208,41 @@ nav {
   list-style: circle;
 }
 
+@media screen and (max-width:1100px) {
+  nav{
+    padding-top: 0;
+  }
+
+  .main-content {
+    flex-direction: column;
+    gap: 0;
+    margin-top: 15vh;
+  }
+
+  .main-content {
+    padding: 0 5vw;
+  }
+
+  .main-content__info > h2 {
+    font-size: 2rem;
+  }
+
+  .main-content .meeting__image {
+    margin-bottom: 5vh;
+  }
+}
+
+@media screen and (max-width:500px) {
+  .main-content {
+    padding: 0 1vw;
+  }
+
+  .main-content__info {
+    width: 90%;
+    padding-bottom: 5vh;
+  }
+}
+
 /* WORK web page */
 
 .work-heading {
